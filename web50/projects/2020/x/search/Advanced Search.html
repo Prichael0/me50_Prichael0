@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Search</a> |
+        <a href="Google Image Search.html">Image Search</a> |
+        <a href="Advanced Search.html">Advanced Search</a>
+    </nav>
+    <h4 style="font-size: x-large; font-weight: lighter; margin-left: 30px;"><a style="color: blue">G</a><a style="color: red">o</a><a style="color: yellow">o</a><a style="color: blue">g</a><a style="color: green">l</a><a style="color: red">e</a></h4>
+    <h3>Advanced Search</h3>
+    <hr>
+    <br>
+    <div style="margin-left: 30px;">
+        <h4 style="font-weight: lighter;">Find pages with...</h4>
+        <form action="https://www.google.com/search" method="GET" class="advanced-search-form">
+            <input type="hidden" name="tbm" value="isch">
+            <div class="form-group">
+                <label for="all_words">all these words:</label>
+                <input type="text" class="advanced-input" id="all_words" name="as_q">
+            </div>
+            <div class="form-group">
+                <label for="exact_phrase">this exact word or phrase:</label>
+                <input type="text" class="advanced-input" id="exact_phrase" name="as_epq">
+            </div>
+            <div class="form-group">
+                <label for="any_words">any of these words:</label>
+                <input type="text" class="advanced-input" id="any_words" name="as_oq">
+            </div>
+            <div class="form-group">
+                <label for="none_words">none of these words:</label>
+                <input type="text" class="advanced-input" id="none_words" name="as_eq">
+            </div>
+            <button type="submit">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>
+
